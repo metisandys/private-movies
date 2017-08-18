@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th 名字
+            th 阈值
+        tbody
+          each item in users
+            tr(class="item-id-#{item._id}")
+              td #{item.name}
+              td #{item.role}

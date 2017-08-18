@@ -1,0 +1,23 @@
+doctype html
+html
+head
+	meta(chartset="utf-8")
+	meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0")
+	title #{title}
+	include ./includes/head
+body
+	include ./includes/header
+	block content
+	//- h1 #{title}
+	block footer
+		.m-footer
+			.container-fluid
+					.row
+						.col-md-offset-1.col-md-10.col-xs-offset-1.col-xs-10
+							.footer-img
+								a(href="javascript:;")
+									img(src="/images/1.jpg" alt="footerImg")
+						.col-md-1
+		.row(style="background:black;")
+			.col-md-offset-1.col-md-12.col-xs-offset-1.col-xs-12
+			p(style="text-align: center;color:#fff;line-height:20px") &copy 孟祥宇
